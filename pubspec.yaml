@@ -1,0 +1,28 @@
+name: 'BausteinEditor'
+version: 0.0.1
+description: GLKVRUNNERDS Dokumentiere die Bausteine
+author: paulsen <flenst111@googlemail.com>
+homepage: https://leever-miteenanner.de
+
+
+
+environment:
+  sdk: any
+
+dependencies:
+  browser: any
+  dart_to_js_script_rewriter: any
+  intl: any
+  simple_dialog:
+    path: ../simple_dialog
+  io: any
+  webgen:
+    path: ../webgen
+dev_dependencies:
+    crypto: any
+    utf: any
+    markdown: any
+
+transformers:
+- dart_to_js_script_rewriter
+

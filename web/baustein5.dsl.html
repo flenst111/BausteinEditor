@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BausteinEditor</title>
+<!-- Bootstrap -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script defer src="bausteineditor.dart" type="application/dart"></script>
+  <script defer src="packages/browser/dart.js"></script>
+ <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  .span3 {
+        height: 500px !important;
+        overflow: scroll;
+ }
+</style>
+
+
+</head>
+<body>
+  
+
+<div  id='main'>
+   <body class='yyy'>
+
+<header>
+     <div class="container">
+         <div class="row">
+             <div class="col-sm-6">
+                 <div class="logo">BAUSTEINE</div>
+             </div>
+             <div class="col-sm-6 hidden-xs">
+                 <div class="row">
+                     <div class="col-sm-5">
+                         <div class="form-group">
+                             <input type="text" id="login_username" class="form-control" placeholder="USERNAME">
+                            </div>
+                         </div>
+                     </div>
+                     <div class="col-sm-5">
+                         <div class="form-group">
+                             <input id="login_password" type="text" class="form-control" placeholder="Password">
+
+                         </div>
+                     </div>
+                     <div class="col-sm-2">
+                         <div class="form-group">
+                             <input type="button" id="btn_login" value="login" class="btn btn-primary">
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class='row xyz'>
+         <div class='col-xs-12 col-sm-6 col-md-12 col12 col xxx'>
+            <h3  id='Editor'>Bausteineditor               </h3>
+             </div>
+          </div>
+      <div class='row xyz'>
+         <div class='col-xs-2 col-sm-1 col2 col-md-2 col span3' >
+
+            <div id='tablediv'>
+
+            <table  id='bausteine'class='table table-bordered extended'>
+               <tr  class='active' >
+                  <th  class='active' >Bausteinname                     </th>
+ 
+                  <th  class='active' >Typ                     </th>
+ 
+                  <th  class='active' >Bereich                     </th>
+                   </tr>
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_CompareVar'> CompareVar</button>                     </td>
+                   </tr>
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_CopyFileContent'> CopyFileContent</button>                     </td>
+                   </tr>
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_Counter'> Counter</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_BSStarter'> BSStarter</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_DB2File'> DB2File</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_SelectNext'> SelectNext</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_Add2Path'> Add2Path</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_BuildBean'> BuildBean</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_DB2HTTP'> DB2HTTP</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_BuildBeanFromCSV'> BuildBeanFromCSV</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_BuildCreateExample'> BuildCreateExample</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_BuildCSVStr'> BuildCSVStr</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_BuildFormatedStrings'> BuildFormatedStrings</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_CheckStructure'> CheckStructure</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_BuildMD5Hash'> BuildMD5Hash</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_BuildPDF'> BuildPDF</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_BuildZeilenBeschreibung'> BuildZeilenBeschreibung</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_ChangeLog4JLoggerLevel'> ChangeLog4JLoggerLevel</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_CheckExtSID'> CheckExtSID</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_CheckMemory'> CheckMemory</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_CheckPrev'> CheckPrev</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_CommandExec'> CommandExec</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_DBBytea2String'> DBBytea2String</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_Delete'> Delete</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_Doc2Graph'> Doc2Graph</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_Doc2HTMLSite'> Doc2HTMLSite</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_Doc2SQL'> Doc2SQL</button>                     </td>
+                   </tr>
+ 
+               <tr  class='active' >
+                  <td  class='info' ><button id='form1_DocClass'> DocClass</button>                     </td>
+                   </tr>
+                </table>
+            </div>
+            <button  id='test_refresh' class='btn btn-primary' >REFRESH               </button>
+
+         </div>
+         <div class='col-xs-10 col-sm-6 col10 col-md-10 col xyz'>
+            <form  id='form1'class='form'>
+               <div  info='test' class='form-group' >
+                  <span  for='form1_bsname' class='label label-primary' >Bausteinname                     </span>
+ 
+                  <input  id='form1_bsname' placeholder='Baustein' type='text' class='form-control' >                     </input>
+ 
+                  <span  for='form1_bstyp' class='label label-primary' >Typ                     </span>
+ 
+                  <input  id='form1_bstyp' type='text' list='typen'>                     </input>
+ 
+                  <datalist  id='typen'>
+                     <option  value='DOBS'>                        </option>
+ 
+                     <option  value='BUBS'>                        </option>
+ 
+                     <option  value='ETBS'>                        </option>
+ 
+                     <option  value='STATBS'>                        </option>
+                      </datalist>
+ 
+                  <span  for='form1_description' class='label label-primary' >Description                     </span>
+ 
+                  <textarea  id='form1_description' rows='10' class='form-control' >                     </textarea>
+ 
+                  <span  for='form1_params' class='label label-primary' >Parameter                     </span>
+ 
+                  <textarea  id='form1_params' rows='4' class='form-control' >                     </textarea>
+ 
+                  <span  for='form1_bereich' class='label label-primary' >Bereich                     </span>
+ 
+                  <input  id='form1_bereich' placeholder='Bereich' type='text' class='form-control' >                     </input>
+ 
+                  <span  for='form1_package' class='label label-primary' >Package                     </span>
+ 
+                  <textarea  id='form1_package' rows='2' class='form-control' >                     </textarea>
+ 
+                  <button  id='form1_insert' class='btn btn-primary' >INSERT       </button>
+ 
+                  <button  id='form1_update' class='btn btn-primary' >UPDATE       </button>
+                   <button  id='form1_clear' class='btn btn-primary' >CLEAR        </button>
+                   </div>
+                </form>
+             </div>
+          </div>
+ 
+      <footer  id='test' class='footer' >
+         <div  style='padding-left: 0' class='container' >
+            <div  class='row' >
+               <div  class='col-xs-12 col-sm-6 col-md-12 col12 col' >
+                  <div  style='background-color:#ecf0f1; padding: 1em 2em;'class='wrapper'>
+                     <h3 >Von hier aus in die Welt                        </h3>
+ 
+                     <ul >
+                        <li >
+                           <a  href='http://leever-miteenanner.de' it='home' class='pull-left' >home                              </a>
+                            </li>
+ 
+                        <li >
+                           <a  href='http://twitter.com' it='twitter' class='pull-left' >twitter                              </a>
+                            </li>
+ 
+                        <li >
+                           <a  href='http://despara.com' it='despora' class='pull-left' >despora                              </a>
+                            </li>
+ 
+                        <li >
+                           <a  href='#googleradtouren' it='googleradtouren' class='pull-left' >googleradtouren                              </a>
+                            </li>
+ 
+                        <li >
+                           <a  ='class' href='http://leever-miteenanner.de/mitmachcafe.html' it='mitmachcafe' class='pull-left' >mitmachcafe                              </a>
+                            </li>
+                         </ul>
+                      </div>
+                   </div>
+                </div>
+             </div>
+            <div id="footer"><h1>MELDUNGEN</h1></div>
+          </footer>
+       </body>
+    </div>
+ 
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
